@@ -1,0 +1,23 @@
+pytorch指令安装
+```
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+```
+因为网络问题下载比较慢的，可以通过下面网站搜索对应版本的.whl文件安装
+https://download.pytorch.org/whl/torch/
+
+```
+pip install /path/to/pytorch
+```
+把/path/to/pytorch替换成自己的实际路径即可
+
+```
+python -c "import torch; print(torch.__version__, torch.version.cuda)"
+```
+
+输出：
+2.7.1+cu128 12.8安装成功
+
+pytorch3d安装
+因为github上拉取安装的老是出问题不支持最新版本的pytorch但是5090又只能安装比较新的pytorch版本，所以只能安装预编译的.whl文件。
+https://miropsota.github.io/torch_packages_builder/pytorch3d/
+进入上面这个网站搜索对应版本的pytorch3d (一定要安装对应自己环境的版本) ，直接点击下载即可。
