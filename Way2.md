@@ -21,3 +21,7 @@ pytorch3d安装
 因为github上拉取安装的老是出问题不支持最新版本的pytorch但是5090又只能安装比较新的pytorch版本，所以只能安装预编译的.whl文件。
 https://miropsota.github.io/torch_packages_builder/pytorch3d/
 进入上面这个网站搜索对应版本的pytorch3d (一定要安装对应自己环境的版本) ，直接点击下载即可。
+
+```
+python -c "import torch; import pytorch3d; print(torch.__version__, pytorch3d.__version__)"
+```
